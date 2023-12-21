@@ -11,22 +11,29 @@
     <title>Fx Ecommerce Blog</title>
   </head>
   <body>
-    <div class="header">
-      <div class="company_name">
-        <h1 class="brand_name">Fx E-commerce</h1>
+    <!-- mobile nav start here -->
+    <div id="myNav" class="overlay">
+      <div class="mobilenav-overlay-header">
+        <div class="company_name">
+          <h1 class="brand_name">Fx E-commerce</h1>
+        </div>
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()"
+          ><img src="images/icon-close.svg" alt="icon-close" class="closeNav" />
+        </a>
       </div>
-      <div class="menu">
-        <ul>
-          <li><a href="">collection</a></li>
-          <li><a href="">About Us</a></li>
-          <li><a href="">Post Ads</a></li>
-          <li><a href="">Contact</a></li>
-        </ul>
+
+      <div class="overlay-content">
+        <a href="index.html" class="mobile_navigator">Home</a>
+        <a href="about.html" class="mobile_navigator">About Us</a>
+        <a href="post_product.html" class="mobile_navigator">Post product</a>
+        <a href="contact.html" class="mobile_navigator">Contact</a>
+        <a href="sign.html" class="mobile_navigator">Sign Up</a>
       </div>
+
       <div class="cart">
         <div class="search_div">
           <form action="">
-            <input type="text" placeholder="search anything" />
+            <input type="text" placeholder="search anything" autofocus />
             <button class="search_button">
               <img src="images/search.svg" alt="" />
             </button>
@@ -35,6 +42,42 @@
         <div>
           <a href=""><img src="images/icon-cart.svg" alt="cart-logo" /></a>
         </div>
+      </div>
+    </div>
+    <!-- mobile nav stop here -->
+    <div class="header">
+      <div class="company_name">
+        <h1 class="brand_name">Fx E-commerce</h1>
+      </div>
+      <div class="menu">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About Us</a></li>
+          <li><a href="post_product.html">Post product</a></li>
+          <li><a href="contact.html">Contact</a></li>
+          <li><a href="sign.html">Sign Up</a></li>
+        </ul>
+      </div>
+      <div class="cart">
+        <div class="search_div">
+          <form action="">
+            <input type="text" placeholder="search anything" autofocus />
+            <button class="search_button">
+              <img src="images/search.svg" alt="" />
+            </button>
+          </form>
+        </div>
+        <div>
+          <a href=""><img src="images/icon-cart.svg" alt="cart-logo" /></a>
+        </div>
+      </div>
+      <div class="hamburger">
+        <img
+          src="images/icon-menu.svg"
+          alt="icon-hamburger"
+          onclick="openNav()"
+          class="hamburger-icon"
+        />
       </div>
     </div>
     <div class="line_box">
@@ -47,7 +90,7 @@
     <div class="product_slider">
       <div id="slider">
         <img
-          src="images/image-product-4-thumbnail.jpg"
+          src="images/images/product_advert_img_3.jpeg"
           alt="Description 1"
           data-title="Title Slide 1"
           data-url="#"
@@ -59,13 +102,13 @@
           data-url="#"
         />
         <img
-          src="images/product_advert_img_2 - Copy.jpeg"
+          src="images/images/product_advert_img_3.jpeg"
           alt="Description 3"
           data-title="Title Slide 3"
           data-url="#"
         />
         <img
-          src="images/product_advert_img_4.jpeg"
+          src="images/product_advert_img_3.jpeg"
           alt="Description 4"
           data-title="Title Slide 4"
           data-url="#"
@@ -81,42 +124,42 @@
               <img alt="Round_neck" src="images/sneaker.jpeg" />
             </div>
             <h3>Product Name</h3>
-            <p>
+            <p class="about_product">
               Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tenetur
               doloremque adipisci quaerat consequatur esse
             </p>
             <div class="price">
               <p>$12</p>
             </div>
-            <a href="#">Add to Cart</a>
+            <a href="#" class="cart_button">Add to Cart</a>
           </div>
           <div class="single-box">
             <div class="img">
               <img alt="Round_neck" src="images/sneaker.jpeg" />
             </div>
             <h3>Product Name</h3>
-            <p>
+            <p class="about_product">
               Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tenetur
               doloremque adipisci quaerat consequatur esse
             </p>
             <div class="price">
               <p>$14</p>
             </div>
-            <a href="#">Add to Cart</a>
+            <a href="#" class="cart_button">Add to Cart</a>
           </div>
           <div class="single-box">
             <div class="img">
               <img alt="Round_neck" src="images/sneaker.jpeg" />
             </div>
             <h3>Product Name</h3>
-            <p>
+            <p class="about_product">
               Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tenetur
               doloremque adipisci quaerat consequatur esse
             </p>
             <div class="price">
               <p>$15</p>
             </div>
-            <a href="#">Add to Cart</a>
+            <a href="#" class="cart_button">Add to Cart</a>
           </div>
         </div>
         <div class="box">
@@ -125,42 +168,42 @@
               <img alt="Round_neck" src="images/sneaker.jpeg" />
             </div>
             <h3>Product Name</h3>
-            <p>
+            <p class="about_product">
               Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tenetur
               doloremque adipisci quaerat consequatur esse
             </p>
             <div class="price">
               <p>$12</p>
             </div>
-            <a href="#">Add to Cart</a>
+            <a href="#" class="cart_button">Add to Cart</a>
           </div>
           <div class="single-box">
             <div class="img">
               <img alt="Round_neck" src="images/sneaker.jpeg" />
             </div>
             <h3>Product Name</h3>
-            <p>
+            <p class="about_product">
               Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tenetur
               doloremque adipisci quaerat consequatur esse
             </p>
             <div class="price">
               <p>$14</p>
             </div>
-            <a href="#">Add to Cart</a>
+            <a href="#" class="cart_button">Add to Cart</a>
           </div>
           <div class="single-box">
             <div class="img">
               <img alt="Round_neck" src="images/sneaker.jpeg" />
             </div>
             <h3>Product Name</h3>
-            <p>
+            <p class="about_product">
               Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tenetur
               doloremque adipisci quaerat consequatur esse
             </p>
             <div class="price">
               <p>$15</p>
             </div>
-            <a href="#">Add to Cart</a>
+            <a href="#" class="cart_button">Add to Cart</a>
           </div>
         </div>
       </div>
@@ -172,10 +215,69 @@
     <div class="comment_section">
       <div class="comment_input">
         <img src="images/comment_logo.svg" alt="" class="comment_logo" />
-        <input type="text" placeholder="Leave a constructive comment...." />
+        <input
+          type="text"
+          autofocus
+          placeholder="Leave a constructive comment...."
+        />
+      </div>
+      <div class="commenter_message_box">
+        <div class="comment_message_input">
+          <div class="comment_identity">
+            <div class="commenter_picture">
+              <img src="images/image-avatar.png" alt="" />
+            </div>
+            <div class="commenter_name">
+              @Romuald <br /><span class="commenter_time">1 min ago</span>
+            </div>
+          </div>
+          <div class="comment_likes">
+            <div class="like">
+              <img src="images/love.svg" alt="fff" />
+              <p class="like_count">35</p>
+            </div>
+          </div>
+        </div>
+        <p class="commenter_message">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit.
+          Necessitatibus et quis repudiandae non quidem, odit veritatis
+          molestias voluptatem nesciunt beatae consequatur quas perspiciatis
+          quisquam adipisci rem blanditiis suscipit, nihil cupiditate.
+        </p>
       </div>
     </div>
-
+    <footer>
+      <div class="footer_content">
+        <div class="company_name">
+          <h1 class="brand_name">Fx E-commerce</h1>
+        </div>
+        <div class="menu">
+          <ul>
+            <li><a href="#" class="footer_link">collection</a></li>
+            <li><a href="#" class="footer_link">About Us</a></li>
+            <li><a href="#" class="footer_link">Post Ads</a></li>
+            <li><a href="#" class="footer_link">Contact</a></li>
+          </ul>
+        </div>
+        <div class="social_media">
+          <ul>
+            <li>
+              <a href="#"><img src="images/facebook.svg" alt="" /></a>
+            </li>
+            <li>
+              <a href="#"><img src="images/twitter.svg" alt="" /></a>
+            </li>
+            <li>
+              <a href="#"><img src="images/instagram.svg" alt="" /></a>
+            </li>
+            <li>
+              <a href="#"><img src="images/envelope-regular.svg" alt="" /></a>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <p class="all_right">2023 FX Ecommerce All Right Reserved.</p>
+    </footer>
     <script src="js/ecommerce.js"></script>
   </body>
 </html>
