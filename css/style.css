@@ -368,7 +368,7 @@ input::placeholder {
   position: absolute;
   left: 29.5%;
   margin-top: 20px;
-  border: 4px solid hsl(220, 13%, 13%);
+  /* border: 4px solid hsl(220, 13%, 13%); */
   border-radius: 10px;
 }
 .commenter_picture img {
@@ -644,9 +644,9 @@ textarea {
   }
   .hamburger img {
     height: 30px;
-    position: absolute;
+    /* position: absolute;
     right: 44px;
-    top: 13%;
+    top: 13%; */
     /* margin-right: 50px;
     margin-bottom: -5%; */
   }
@@ -796,7 +796,7 @@ textarea {
 @media (max-width: 425px) {
   .hamburger img {
     height: 20px;
-    top: 8%;
+    /* top: 8%; */
   }
   .overlay .mobile_navigator {
     font-size: 24px;
@@ -887,7 +887,7 @@ textarea {
     height: 240px;
   }
   .hamburger img {
-    top: 7%;
+    /* top: 7%; */
   }
   .brand_name {
     font-size: 20px;
