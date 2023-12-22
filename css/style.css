@@ -580,7 +580,6 @@ footer .all_right {
   .overlay .mobile_navigator:focus {
     color: #f1f1f1;
   }
-
   .closeNav {
     position: absolute;
     top: 50%;
@@ -595,6 +594,9 @@ footer .all_right {
     margin-right: 0;
     width: 100%;
     margin-bottom: 110px;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
   }
   .company_name {
     margin-top: 5%;
@@ -615,8 +617,71 @@ footer .all_right {
   .single-box .cart_button {
     margin-top: 20px;
   }
+  .google_ads_post {
+    display: none;
+  }
   .comment_logo {
     position: absolute;
     left: -44%;
+  }
+  footer .menu {
+    margin-top: -5%;
+  }
+  .social_media {
+    margin: 4% 0px;
+  }
+  footer .menu ul li a {
+    padding: 10px;
+    color: #fff;
+  }
+  footer .all_right {
+    left: 80px;
+  }
+  footer {
+    height: 370px;
+  }
+  #slider_caption {
+    font-size: 10px;
+  }
+}
+@media (max-width: 425px) {
+  .hamburger img {
+    height: 20px;
+  }
+  .overlay .mobile_navigator {
+    font-size: 24px;
+    width: 100%;
+  }
+  .brand_name {
+    font-size: 24px;
+  }
+  .closeNav {
+    top: 38%;
+    height: 25px;
+  }
+  #slider img {
+    height: 240px;
+  }
+  .img {
+    left: 31%;
+  }
+  .single-box h3 {
+    margin-top: 10%;
+  }
+  .commenter_message_box {
+    left: 26px;
+    height: 230px;
+  }
+  .single-box p {
+    line-height: 1.4;
+  }
+}
+@media (max-width: 375px) {
+  .commenter_message_box {
+    left: 23px;
+    height: 240px;
+  }
+  .hamburger img {
+    top: 9%;
   }
 }
