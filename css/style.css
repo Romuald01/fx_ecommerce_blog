@@ -100,7 +100,7 @@ ul li a :hover {
 }
 .search_div input {
   padding: 10px;
-  border: hsl(220, 13%, 13%);
+  /* border: hsl(220, 13%, 13%); */
   background-color: hsl(220, 14%, 75%);
   width: 400px;
   border-radius: 20px;
@@ -278,6 +278,9 @@ input::placeholder {
   text-align: center;
   box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
   position: relative;
+}
+.single-box .about_product {
+  color: hsl(219, 9%, 45%);
 }
 .single-box:last-child {
   margin-right: 0;
@@ -644,11 +647,7 @@ textarea {
   }
   .hamburger img {
     height: 30px;
-    /* position: absolute;
-    right: 44px;
-    top: 13%; */
-    /* margin-right: 50px;
-    margin-bottom: -5%; */
+    padding-right: 30px;
   }
   footer {
     height: 500px;
@@ -797,6 +796,9 @@ textarea {
   .hamburger img {
     height: 20px;
     /* top: 8%; */
+  }
+  .single-box p {
+    font-size: 24px;
   }
   .overlay .mobile_navigator {
     font-size: 24px;
