@@ -546,7 +546,70 @@ textarea {
 }
 
 /* contact us styling ends here */
-/***************** Media query start here ***************************/
+/* registration and signup page styling start here */
+.form_container {
+  background-color: hsl(26, 100%, 55%);
+  /* height: 400px; */
+}
+.form_background {
+  background-color: #fff;
+}
+.form_container form {
+  width: 50%;
+  margin: auto;
+  border: 2px solid hsl(26, 100%, 55%);
+  background-color: #fff;
+  padding: 20px;
+}
+.form_container form input[type="text"],
+.form_container form input[type="email"],
+.form_container form input[type="password"],
+.form_container form input[type="submit"] {
+  display: block;
+  padding: 10px;
+  width: 100%;
+  margin: 10px;
+  font-size: 20px;
+  border-radius: 10px;
+}
+.form_container form input[type="submit"]:hover {
+  background-color: #a0a0a0;
+  color: hsl(26, 100%, 55%);
+}
+.form_container form input[type="submit"] {
+  font-size: 24px;
+  color: hsl(219, 9%, 45%);
+}
+.login_heading {
+  /* position: absolute;
+  left: 0; */
+}
+.form_container label {
+  font-size: 24px;
+  color: hsl(219, 9%, 45%);
+  font-weight: 700;
+}
+.form_container img {
+  height: 10px;
+}
+.form_heading_login {
+  margin-top: -30px;
+}
+.form_heading_register {
+  margin-top: 30px;
+}
+/* .form_heading_login {
+  position: absolute;
+  right: 0;
+} */
+.register_form_headings {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 5%;
+}
+
+/* registration and signup page styling */
+/***************** Media query start here ends here ***************************/
 
 @media (min-width: 1024px) {
   .overlay,
@@ -742,6 +805,12 @@ textarea {
     position: absolute;
     left: -44%;
   }
+  /* register styling  start here */
+  .form_container form {
+    width: 100%;
+    margin: auto;
+  }
+  /* register styling ends here */
   footer .menu {
     margin-top: -5%;
   }
@@ -804,7 +873,6 @@ textarea {
 @media (max-width: 425px) {
   .hamburger img {
     height: 20px;
-    /* top: 8%; */
   }
   .product_slider {
     margin-bottom: 5%;
@@ -847,6 +915,11 @@ textarea {
   }
   .form_contact_details input {
     width: 70%;
+  }
+  .form_heading_login,
+  .form_heading_register,
+  .form_container label {
+    font-size: 20px;
   }
   .contact_heading {
     font-size: 24px;
@@ -894,15 +967,22 @@ textarea {
   .overlay .mobile_navigator {
     font-size: 18px;
   }
+  .form_container form input[type="text"],
+  .form_container form input[type="email"],
+  .form_container form input[type="password"],
+  .form_container form input[type="submit"] {
+    padding: 5px;
+  }
+  .form_container form input[type="submit"] {
+    font-size: 18px;
+  }
 }
 @media (max-width: 375px) {
   .commenter_message_box {
     left: 23px;
     height: 240px;
   }
-  .hamburger img {
-    /* top: 7%; */
-  }
+
   .brand_name {
     font-size: 20px;
   }
