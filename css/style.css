@@ -786,6 +786,15 @@ textarea {
   .address_info {
     font-size: 16px;
   }
+  .box {
+    margin: 50px auto;
+  }
+  .box2 {
+    margin-top: -20px;
+  }
+  .product_slider {
+    margin-bottom: 10%;
+  }
 }
 @media (min-width: 425px) {
   .address_break {
@@ -796,6 +805,9 @@ textarea {
   .hamburger img {
     height: 20px;
     /* top: 8%; */
+  }
+  .product_slider {
+    margin-bottom: 5%;
   }
   .single-box p {
     font-size: 24px;
@@ -909,9 +921,15 @@ textarea {
   .overlay .mobile_navigator {
     font-size: 16px;
   }
+  .single-box h3 {
+    margin-top: 15%;
+  }
 }
 @media (max-width: 320px) {
   .overlay .mobile_navigator {
     font-size: 14px;
+  }
+  .img img {
+    margin-left: -10px;
   }
 }
