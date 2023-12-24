@@ -1156,7 +1156,7 @@ textarea {
 
   .overlay form {
     display: flex;
-    margin-top: 80px;
+    margin-top: 95px;
   }
   form.example input[type="text"] {
     padding: 10px;
@@ -1321,7 +1321,7 @@ textarea {
     color: #fff;
   }
   .cart_div .cart_logo {
-    margin-top: 85px;
+    margin-top: 90px;
   }
 }
 @media (max-width: 375px) {
