@@ -499,7 +499,7 @@ img {
   width: 50%;
   padding: 25px;
   height: 150px;
-  margin-top: 30px;
+  margin-top: 20px;
   border: 3px solid hsl(220, 13%, 13%);
   border-radius: 10px;
   border: 3px solid #ccc;
@@ -930,10 +930,16 @@ textarea {
     height: 30px;
     padding-right: 30px;
   }
+  .comment_section {
+    height: 550px;
+  }
+  .comment_section textarea::placeholder {
+    padding-top: 20px;
+  }
   .comment_logo {
-    position: absolute;
-    left: 1px;
-    top: 1px;
+    position: relative;
+    left: -46%;
+    top: 90px;
   }
   footer {
     height: 500px;
@@ -1024,11 +1030,6 @@ textarea {
   .google_ads_post {
     display: none;
   }
-  .comment_logo {
-    position: relative;
-    left: -44%;
-    top: 90px;
-  }
 
   /* register styling  start here */
   .form_container form {
@@ -1095,10 +1096,6 @@ textarea {
   .img_slider_4,
   .img_slider_5 {
     height: 300px;
-  }
-  .comment_logo {
-    /* left: 3%;
-    top: 5px; */
   }
 }
 @media (min-width: 425px) {
