@@ -9,125 +9,74 @@ function closeNav() {
   document.getElementById("myNav").style.width = "0%";
 }
 
-let slider = document.querySelector("#slider");
-let slides = document.querySelectorAll("#slider img");
-let currentSlide = 0;
-let dots;
-let autoSlide;
-let autoSlidePlay = true;
-
-addControls();
-addCaptionArea();
-slideTo(currentSlide);
-resetAutoSlide();
-
-function resetAutoSlide() {
-  if (autoSlidePlay) {
-    clearInterval(autoSlide);
-    autoSlide = setInterval(() => {
-      slideTo(increaseSlide(1));
-    }, 5000);
-  }
+var slideIndex = 1;
+showSlides(slideIndex);
+function plusSlides(n) {
+  showSlides((slideIndex += n));
 }
-
-function startPause() {
-  let btn = document.getElementById("slider_startPause");
-  if (autoSlidePlay) {
-    autoSlidePlay = false;
-    btn.className = "far fa-play-circle";
-    clearInterval(autoSlide);
-  } else {
-    autoSlidePlay = true;
-    btn.className = "far fa-pause-circle";
-    resetAutoSlide();
-  }
+function currentSlide(n) {
+  showSlides((slideIndex = n));
 }
-
-function addControls() {
-  //arrow Left
-  let arrowLeft = document.createElement("div");
-  arrowLeft.id = "slider_arrow_left";
-  arrowLeft.innerHTML = "<img src='images/slider_arrow.svg''>";
-  arrowLeft.title = "slide " + (increaseSlide(-1) + 1);
-  arrowLeft.addEventListener("click", () => {
-    slideTo(increaseSlide(-1));
-    resetAutoSlide();
-  });
-  slider.append(arrowLeft);
-  //arrow Right
-  let arrowRight = document.createElement("div");
-  arrowRight.id = "slider_arrow_right";
-  arrowRight.innerHTML = '<i class="fas fa-angle-right"></i>';
-  arrowRight.title = "slide " + (increaseSlide(1) + 1);
-  arrowRight.addEventListener("click", () => {
-    slideTo(increaseSlide(1));
-    resetAutoSlide();
-  });
-  slider.append(arrowRight);
-  //pause Button
-  let startPauseBtn = document.createElement("i");
-  startPauseBtn.id = "slider_startPause";
-  startPauseBtn.className = "far fa-pause-circle";
-  startPauseBtn.addEventListener("click", () => {
-    startPause();
-  });
-  slider.append(startPauseBtn);
-  //indicator dots
-  let indicators = document.createElement("div");
-  indicators.id = "slider_indicators";
+function showSlides(n) {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("dot");
+  if (n > slides.length) {
+    slideIndex = 1;
+  }
+  if (n < 1) {
+    slideIndex = slides.length;
+  }
   for (i = 0; i < slides.length; i++) {
-    let nr = i;
-    let dot = document.createElement("i");
-    dot.className = "far fa-circle";
-    dot.addEventListener("click", () => {
-      slideTo(nr);
-      resetAutoSlide();
-    });
-    indicators.append(dot);
+    slides[i].style.display = "none";
   }
-  slider.append(indicators);
-  dots = indicators.children;
+  for (i = 0; i < dots.length; i++) {
+    dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex - 1].style.display = "block";
+  dots[slideIndex - 1].className += " active";
+}
+// Auto Slide   if you need auto slide ,remove the commit "//"
+var slideIndex = 0;
+showSlides();
+function showSlides() {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";
+  }
+  slideIndex++;
+  if (slideIndex > slides.length) {
+    slideIndex = 1;
+  }
+  slides[slideIndex - 1].style.display = "block";
+  setTimeout(showSlides, 2000); // Change image every 2 seconds
 }
 
-function increaseSlide(nr) {
-  if (nr > 0 && currentSlide + nr >= slides.length) return 0;
-  else if (nr < 0 && currentSlide + nr < 0) return slides.length - 1;
-  else return currentSlide + nr;
-}
+// about_us owl carousel
+// This is script file
 
-function slideTo(nr) {
-  let from = currentSlide * -100 + "%";
-  let to = nr * -100 + "%";
-  slides[0].animate(
-    { marginLeft: [from, to] },
-    { duration: 500, easing: "ease-in-out", iterations: 1, fill: "both" }
-  );
-  highlightIndicator(nr);
-  currentSlide = nr;
-  addCaptions();
-}
-
-function highlightIndicator(nr) {
-  dots[currentSlide].className = "far fa-circle";
-  dots[nr].className = "far fa-dot-circle";
-}
-
-function addCaptionArea() {
-  let caption = document.createElement("a");
-  caption.id = "slider_caption";
-  let captionTitle = document.createElement("h1");
-  let captionDesc = document.createElement("p");
-  caption.append(captionTitle);
-  caption.append(captionDesc);
-  slider.append(caption);
-}
-
-function addCaptions() {
-  let link = document.getElementById("slider_caption");
-  link.href = slides[currentSlide].dataset.url;
-  link.title = slides[currentSlide].dataset.title + ": read more";
-  let title = document.querySelector("#slider_caption h1");
-  title.innerHTML = slides[currentSlide].dataset.title;
-  let descr = document.querySelector("#slider_caption p");
-  descr.innerHTML = slides[currentSlide].alt;
-}
+$(".testimonials-container").owlCarousel({
+  loop: true,
+  autoplay: true,
+  autoplayTimeout: 6000,
+  margin: 10,
+  nav: true,
+  navText: [
+    "<i class='fa-solid fa-arrow-left'></i>",
+    "<i class='fa-solid fa-arrow-right'></i>",
+  ],
+  responsive: {
+    0: {
+      items: 1,
+      nav: false,
+    },
+    600: {
+      items: 1,
+      nav: true,
+    },
+    768: {
+      items: 2,
+    },
+  },
+});
