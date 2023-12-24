@@ -1,4 +1,4 @@
-@import url("https://fonts.google.com/specimen/Kumbh+Sans");
+/* @import url("https://fonts.google.com/specimen/Kumbh+Sans"); */
 
 colors {
   color: hsl(220, 13%, 13%);
@@ -44,6 +44,7 @@ body {
 }
 .testimonials-container {
   position: relative;
+  color: #fff;
 }
 .testimonials-container .testimonial-card {
   padding: 20px;
@@ -537,7 +538,6 @@ img {
   margin-left: 30px;
 }
 .commenter_message_box {
-  height: 170px;
   background-color: hsl(220, 14%, 75%);
   width: 45%;
   position: absolute;
@@ -627,7 +627,7 @@ footer {
 
 /* about us styling start here */
 .about_us_container {
-  background-color: var(--body-clr);
+  background-color: hsl(219, 9%, 45%);
   width: 90%;
   margin: auto;
   justify-content: center;
@@ -635,8 +635,9 @@ footer {
   text-align: center;
 }
 .mission_heading,
-.about_heading {
-  color: hsl(219, 9%, 45%);
+.about_heading,
+.what_client_say {
+  color: hsl(223, 64%, 98%);
 }
 
 .mission_paragraph,
@@ -752,7 +753,6 @@ textarea {
 /* registration and signup page styling start here */
 .form_container {
   background-color: hsl(26, 100%, 55%);
-  /* height: 400px; */
 }
 .form_background {
   background-color: #fff;
@@ -838,9 +838,7 @@ textarea {
     margin-top: 15%;
     margin-bottom: 15%;
   }
-  .commenter_message_box {
-    height: 190px;
-  }
+
   .comment_logo {
     left: 7%;
   }
@@ -1107,6 +1105,9 @@ textarea {
   .hamburger img {
     height: 20px;
   }
+  .commenter_message_box {
+    width: 86%;
+  }
   .comment_logo {
     left: -40%;
   }
@@ -1147,8 +1148,7 @@ textarea {
     margin-top: 10%;
   }
   .commenter_message_box {
-    left: 26px;
-    height: 230px;
+    left: 7%;
   }
   .single-box p {
     line-height: 1.4;
@@ -1237,7 +1237,6 @@ textarea {
   }
   .commenter_message_box {
     left: 23px;
-    height: 240px;
   }
   .img_slider_1,
   .img_slider_2,
