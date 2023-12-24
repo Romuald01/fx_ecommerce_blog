@@ -1138,19 +1138,10 @@ textarea {
   .img_slider_5 {
     height: 300px;
   }
-  .search_button {
-    right: 572px;
-    top: 114%;
-  }
-
-  .cart_div .cart_logo {
-    margin-right: 450px;
-    margin-top: 20px;
-  }
   .overlay .cart {
     display: flex;
     justify-content: space-between;
-    margin-top: 40px;
+    /* margin-top: 40px; */
   }
 }
 @media (min-width: 425px) {
@@ -1162,10 +1153,7 @@ textarea {
   .hamburger img {
     height: 20px;
   }
-  .overlay .cart {
-    margin-left: 20px;
-    margin-top: 180px;
-  }
+
   .overlay form {
     display: flex;
     margin-top: 70px;
@@ -1197,10 +1185,6 @@ textarea {
 
   form.example button:hover {
     background: hsl(219, 9%, 45%);
-  }
-
-  .overlay .cart {
-    margin-top: 5px;
   }
 
   .overlay .cart .commenter_message_box {
@@ -1337,7 +1321,7 @@ textarea {
     color: #fff;
   }
   .cart_div .cart_logo {
-    margin-top: 34px;
+    margin-top: 75px;
   }
 }
 @media (max-width: 375px) {
@@ -1345,11 +1329,6 @@ textarea {
     left: -40%;
     top: 100px;
   }
-  .search_button {
-    right: 179px;
-    top: 71%;
-  }
-
   .send_comment {
     font-size: 18px;
   }
@@ -1391,12 +1370,5 @@ textarea {
   }
   .img img {
     margin-left: -10px;
-  }
-  .search_button {
-    right: 123px;
-    top: 72%;
-  }
-  .cart_div .cart_logo {
-    margin-top: 50px;
   }
 }
