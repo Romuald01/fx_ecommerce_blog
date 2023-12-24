@@ -247,6 +247,7 @@ input::placeholder {
   background-color: hsl(26, 100%, 55%);
   position: absolute;
   right: 203px;
+  top: 42px;
   border-radius: 40%;
 }
 .search_button img {
@@ -826,7 +827,9 @@ textarea {
     width: 300px;
   }
   .search_button {
-    right: 110px;
+    position: absolute;
+    right: 10.5%;
+    top: 18%;
   }
   .single-box {
     width: 240px;
@@ -914,6 +917,21 @@ textarea {
   .menu,
   .cart {
     display: none;
+  }
+  .overlay .cart {
+    display: block;
+  }
+  .search_button {
+    right: 60px;
+    top: 100%;
+    border: 2px solid yellow;
+  }
+  .search_button img {
+    height: 24px;
+    width: 31px;
+  }
+  .search_div form {
+    margin-top: 10%;
   }
   footer .menu {
     display: block;
@@ -1095,6 +1113,15 @@ textarea {
   .img_slider_5 {
     height: 300px;
   }
+  .search_button {
+    right: 572px;
+    top: 117%;
+  }
+  #myNav a .cart .cart_img {
+    position: absolute;
+    top: -8%;
+    left: 29%;
+  }
 }
 @media (min-width: 425px) {
   .address_break {
@@ -1104,6 +1131,13 @@ textarea {
 @media (max-width: 425px) {
   .hamburger img {
     height: 20px;
+  }
+  .search_button {
+    right: 229px;
+    top: 65%;
+  }
+  .overlay .cart {
+    margin-top: 5px;
   }
   .commenter_message_box {
     width: 86%;
