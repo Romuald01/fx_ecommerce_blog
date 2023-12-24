@@ -28,6 +28,33 @@ body {
   src: url("https://fonts.google.com/specimen/Kumbh+Sans");
 }
 
+/* Style the search field */
+form.example input[type="text"] {
+  padding: 10px;
+  font-size: 17px;
+  border: 1px solid grey;
+  float: left;
+  width: 80%;
+  background: #f1f1f1;
+}
+
+/* Style the submit button */
+form.example button {
+  float: left;
+  width: 20%;
+  padding: 10px;
+  background: hsl(26, 100%, 55%);
+  color: white;
+  font-size: 17px;
+  border: 1px solid grey;
+  border-left: none; /* Prevent double borders */
+  cursor: pointer;
+}
+
+form.example button:hover {
+  background: hsl(219, 9%, 45%);
+}
+
 .testimonials-section {
   width: 100%;
   padding: 0px 8%;
@@ -228,7 +255,7 @@ ul li a :hover {
   /* border: hsl(220, 13%, 13%); */
   background-color: hsl(220, 14%, 75%);
   width: 400px;
-  border-radius: 20px;
+  /* border-radius: 20px; */
   border: 2px solid hsl(26, 100%, 55%);
 
   /* position: absolute; */
@@ -918,33 +945,16 @@ textarea {
   .cart {
     display: none;
   }
-  /* .cart {
-    display: inline-flex;
-    padding-right: 25px;
+  .search_div form {
+    margin-right: 10px;
   }
-  .header_section_line {
-    color: red;
-    width: 90%;
-    text-align: center;
+  form.example button {
+    background: hsl(219, 9%, 45%);
   }
-  .search_div {
-    margin-right: 20px;
-  }
-  .search_div input {
-    padding: 10px;
-  } */
   .overlay .cart {
     display: block;
   }
-  .search_button {
-    right: 60px;
-    top: 100%;
-    border: 2px solid yellow;
-  }
-  .search_button img {
-    height: 24px;
-    width: 31px;
-  }
+
   .search_div form {
     margin-top: 10%;
   }
@@ -1152,16 +1162,43 @@ textarea {
   .hamburger img {
     height: 20px;
   }
-  .cart_div .cart_logo {
-    margin-top: 60px;
+  .overlay .cart {
+    margin-left: 20px;
+    margin-top: 180px;
   }
-  .search_div {
-    margin-top: 14%;
+  .overlay form {
+    display: flex;
+    margin-top: 50px;
   }
-  .search_button {
-    right: 229px;
-    top: 77%;
+  form.example input[type="text"] {
+    padding: 10px;
+    font-size: 17px;
+    border: 1px solid grey;
+    float: right;
+    width: 130px;
+    border: 2px solid black;
+    background: #f1f1f1;
   }
+  form.example input {
+    width: 100%;
+    padding: 40px;
+  }
+  form.example button {
+    float: left;
+    width: 40%;
+    padding: 10px;
+    background: hsl(219, 9%, 45%);
+    color: white;
+    font-size: 17px;
+    border: 1px solid grey;
+    border-left: none; /* Prevent double borders */
+    cursor: pointer;
+  }
+
+  form.example button:hover {
+    background: hsl(219, 9%, 45%);
+  }
+
   .overlay .cart {
     margin-top: 5px;
   }
@@ -1298,6 +1335,9 @@ textarea {
     padding: 5px;
     font-size: 18px;
     color: #fff;
+  }
+  .cart_div .cart_logo {
+    margin-top: 34px;
   }
 }
 @media (max-width: 375px) {
